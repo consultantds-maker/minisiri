@@ -38,17 +38,17 @@ district=state[state["district_clean"]==add_selectbox_distrct]
 state=state[["state_clean","district_clean","Risk","Risk_norm","year","Risk_Category"]]
 
 
-# st.subheader("Graph")
-# Line chart
-#st.subheader(add_selectbox_district,"rainfall Trend")
-# st.bar_chart(state,horizontal=False)
-# st.write("### Risk Trends Per State")
-# st.line_chart(tire4.set_index("state_clean")["Risk_norm"])
+st.subheader("Graph")
+Line chart
+st.subheader(add_selectbox_district,"rainfall Trend")
+st.bar_chart(state,horizontal=False)
+st.write("### Risk Trends Per State")
+st.line_chart(tire4.set_index("state_clean")["Risk_norm"])
 
-# st.subheader(add_selectbox_state)
+st.subheader(add_selectbox_state)
 
-# st.write("### Risk Trends per District")
-# st.line_chart(state.set_index("district_clean")["Risk_norm"])
+st.write("### Risk Trends per District")
+st.line_chart(state.set_index("district_clean")["Risk_norm"])
 
 # # st.bar_chart(state.set_index("district_clean")["Risk_norm"])
 # st.bar_chart(state, x="district_clean", y="Risk_Category",stack=True)
@@ -65,14 +65,8 @@ st.line_chart(
     color="district_clean"
 )
 
-# st.write("### Risk Trends Over Years per District")
-# # st.write(add_selectbox_state)
-# st.bar_chart(
-#     state, 
-#     x="year", 
-#     y="Risk_Category", 
-#     color="district_clean"
-# )
+
+
 
 
 
