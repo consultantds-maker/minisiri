@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # st.write("tire2")
-tire4=pd.read_csv("E:\suraksha_lens\data\TIER4_final.csv")
+tire4=pd.read_csv("tire4.csv")
 tire4 = tire4.drop_duplicates()
 
 tire4.fillna(0, inplace=True)
@@ -77,3 +77,4 @@ st.bar_chart(
     y="Risk_Category", 
     color="district_clean"
 )
+
