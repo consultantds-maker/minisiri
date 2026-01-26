@@ -1,60 +1,51 @@
 import streamlit as st
 import pandas as pd
 
-st.write("tire1")
-# tire1=pd.read_csv("E:\suraksha_lens\data\TIER1_weekly_all_districts_1981_2025.csv")
-# tire1=tire1[:10000]
-# tire1
-
-# option = st.selectbox(
-#     'Which number do you like best?',
-#      tire1['district'].unique())
-
-# 'You selected: ', option
-
-# rainfall=tire1[tire1["district"]==option]
-
-# total_rainfall=rainfall["rainfall_mm"].sum()
-
-# 'Total rainfall mm: ', total_rainfall
-# rainfall
-
-# st.line_chart(rainfall)
-# import streamlit as stimport pandas as pdimport numpy as np
-# st.title('mini_ceri')
-"""My first appHere's our first attempt at using data to create a table:"""
 
 
-# chart_data = pd.DataFrame(#      np.random.randn(20, 3),#      columns=['a', 'b', 'c'])
-# st.line_chart(chart_data)
+# st.header("know more about Suraksha Lens")
+
+st.subheader("""Suraksha Lens
+People. Protection. Platform.Suraksha Lens is an early warning platform that helps identify and prevent exploitation risks that emerge in the aftermath of climate stress and displacement. Developed by the South Asian Institute of Crime and Justice Studies, it addresses a critical blind spot in climate adaptation and disaster response: the predictable rise in human trafficking, labour exploitation, and gender-based harm that often follows floods, droughts, heatwaves, and other climate shocks.
+Climate disasters don’t end when the water recedes or the emergency aid stops. They often set off a chain of risks. Loss of livelihoods, unsafe migration, weak social protection, and informal or digital labour markets can push people especially women, children, and marginalised communities into situations of exploitation. Suraksha Lens looks at these risks together, instead of treating disasters as one-time events.
+""")
 
 
-df = pd.read_csv("E:\suraksha_lens\data\TIER1_weekly_all_districts_1981_2025.csv")
-df=df[:10000]
-df
 
-# Add a selectbox to the sidebar:
-add_selectbox_district = st.sidebar.selectbox(
-    'select the district',
-    df['district'].unique(),
-)
-add_selectbox_week_start = st.sidebar.selectbox(
-    'week_start period',
-    df['week_start'].unique())
+st.header("What Powers Suraksha Lens:")
+st.subheader("""The Climate Exploitation Risk Index (CERI)
+At the core of the platform is the Climate Exploitation Risk Index (CERI). It brings together three key elements:
+Climate hazards
+Such as floods, droughts, heatwaves, glacial lake outburst floods
 
-selected_date = st.sidebar.slider("Select rainfall",
-df['rainfall_mm'].min(),
-df['rainfall_mm'].max()
-)
-st.subheader(add_selectbox_district)
 
-rainfall=df[df['district']==add_selectbox_district]
-total_rainfall=str(rainfall['rainfall_mm'].sum())
-st.subheader("Rainfall in MM")
-st.write(total_rainfall)
-#add_selectbox_district,' Data', df[df['district']==add_selectbox_district]
-filtered_df=df[df['district']==add_selectbox_district]
-# Line chart
-#st.subheader(add_selectbox_district,"rainfall Trend")
-st.line_chart(filtered_df.set_index("week_start")["rainfall_mm"])
+Pathways of impact
+
+
+  1.Including displacement, livelihood loss, distress migration
+
+
+  2.Social and structural vulnerabilities
+
+
+Like gender, caste, informal work, digital recruitment
+These factors  are combined to create   location-based risk profiles, early warning indicators, and visual dashboards that are easy to understand and use. 
+""")
+
+
+st.subheader("""From Data to Anticipatory Action
+Suraksha Lens brings together  climate data, migration trends , trafficking intelligence, and local knowledge to support anticipatory action. This helps governments, organisations, and communities plan safer recovery efforts and take preventive steps  before exploitation occurs.
+The platform is designed with a strong focus on::
+
+
+  1.Access to local languages
+
+
+  2.Ethical data use and privacy safeguards
+
+
+  3.Community validation of risk signals
+
+
+Suraksha Lens is built to ensure that insights don’t stay in reports, but are used in real-world decision-making where they matter most.""")
 
