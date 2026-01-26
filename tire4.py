@@ -42,8 +42,8 @@ state=state[["state_clean","district_clean","Risk","Risk_norm","year","Risk_Cate
 # Line chart
 #st.subheader(add_selectbox_district,"rainfall Trend")
 # st.bar_chart(state,horizontal=False)
-st.write("### Risk Trends Per State")
-st.line_chart(tire4.set_index("state_clean")["Risk_norm"])
+# st.write("### Risk Trends Per State")
+# st.line_chart(tire4.set_index("state_clean")["Risk_norm"])
 
 # st.subheader(add_selectbox_state)
 
@@ -73,6 +73,7 @@ st.line_chart(
 #     y="Risk_Category", 
 #     color="district_clean"
 # )
+
 
 
 
