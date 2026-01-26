@@ -69,13 +69,14 @@ st.line_chart(
     color="district_clean"
 )
 
-st.write("### Risk Trends Over Years per District")
-# st.write(add_selectbox_state)
-st.bar_chart(
-    state, 
-    x="year", 
-    y="Risk_Category", 
-    color="district_clean"
-)
+# st.write("### Risk Trends Over Years per District")
+# # st.write(add_selectbox_state)
+# st.bar_chart(
+#     state, 
+#     x="year", 
+#     y="Risk_Category", 
+#     color="district_clean"
+# )
+
 
 
