@@ -45,20 +45,16 @@ state=state[["state_clean","district_clean","Risk","Risk_norm","year","Risk_Cate
 st.write("### Risk Trends Per State")
 st.line_chart(tire4.set_index("state_clean")["Risk_norm"])
 
-st.subheader(add_selectbox_state)
+# st.subheader(add_selectbox_state)
 
-st.write("### Risk Trends per District")
-st.line_chart(state.set_index("district_clean")["Risk_norm"])
+# st.write("### Risk Trends per District")
+# st.line_chart(state.set_index("district_clean")["Risk_norm"])
 
-# st.bar_chart(state.set_index("district_clean")["Risk_norm"])
-st.bar_chart(state, x="district_clean", y="Risk_Category",stack=True)
+# # st.bar_chart(state.set_index("district_clean")["Risk_norm"])
+# st.bar_chart(state, x="district_clean", y="Risk_Category",stack=True)
 
 
-# # st.bar_chart(state, x="district_clean", y="year", color="Risk_norm", horizontal=True)
 
-# state["year"] = state["year"].astype(str)
-
-# st.bar_chart(state, x="district_clean", y="year", color="Risk_norm", horizontal=True)
 
 st.write("### Risk Trends Over Years per District")
 # st.write(add_selectbox_state)
@@ -77,6 +73,7 @@ st.line_chart(
 #     y="Risk_Category", 
 #     color="district_clean"
 # )
+
 
 
 
